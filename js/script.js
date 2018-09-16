@@ -224,6 +224,17 @@ class StartUp {
     
                 3.  
             */
+
+           let startupContainer = document.getElementById('startupContainer');
+           if(startupContainer){
+               startupContainer.childNodes.forEach((childnode)=>{
+                   if(childnode.style.display === 'inline') {
+                    childnode.style.display = 'block'
+                   } else {
+                    childnode.style.display = 'inline'
+                   }
+               })
+           }
     }
 
     addstyle(){
